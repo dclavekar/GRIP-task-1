@@ -30,6 +30,15 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = "donatebydcl@gmail.com"
+EMAIL_HOST_PASSWORD = "dcl@2510"
+EMAIL_PORT = 587
+EMAIL_USE_TLS=True
+MAIL_USE_SSL=True
+
+
 INSTALLED_APPS = [
     'paymentGateway.apps.PaymentgatewayConfig',
     'django.contrib.admin',
