@@ -1,11 +1,160 @@
-{% extends './base.html' %}
-{% block title %} Welcome {% endblock title %}
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Home</title>
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- css link -->
+    <link
+      rel="stylesheet"
+      href="{% static '/paymentGateway/css/styles.css' %}"
+    />
+  </head>
 
-{% block content %}  
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            {% load static %}
+            <img
+              src="{% static '/paymentGateway/media/dropred.jpg' %}"
+              alt="DropRed"
+              width="60"
+              height="60"
+              class="d-inline-block align-text-top"
+            />
+            DonateByDCL
+          </a>
+        </div>
+      </nav>
+    </header>
 
-    
-<h1> HI there! Donate now </h1>
-<a href="{% url 'payment' %}">Donate</a>
+    <div class="title">
+      <div class="sign">
+        <span class="fast-flicker">Do</span>nation<span class="flicker"
+          ><br />Drive</span
+        >
+      </div>
+    </div>
+    <div class="info">
+      <p>
+        355 million is the number of menstruating women in India, accounting for
+        nearly 30 per cent of the country’s population. Menstruation continues
+        to be a subject of gender disparity in India. Myths about menstruation
+        are largely prevalent, forcing many girls to drop out of school early or
+        be ostracised for the duration of their menstrual cycle every month.
+        Women across India grow up remaining unaware of the real reasons for
+        menstruation and the importance of menstrual hygiene. The taboo
+        surrounding menstruation remains a part of their growing up and
+        continues with their daughters. Hence, the lack of awareness is carried
+        forward via generations in India
+      </p>
+      <p>
+        In a city, availing a sanitary napkin for a woman aware of menstrual
+        hygiene is a normalised process. Not only are sanitary napkins available
+        in pharmacies and grocery stores in cities, they are commercialised via
+        advertisements so that they are treated as any other product. In rural
+        areas, sanitary napkins are found with difficulty. Most girls rely on
+        home-grown or other readily available material, the latter often being
+        unhygienic and unsanitary. Only 2 to 3 per cent women in rural India are
+        estimated to use sanitary napkins. The lack of demand results in
+        storekeepers not stocking up on sanitary pads. This results in women
+        resorting to unhygienic practices during their menstrual cycle, such as
+        filling up old socks with sand and tying them around waists to absorb
+        menstrual blood, or taking up old pieces of cloth and using them to
+        absorb blood. Such methods increase chances of infection and hinder the
+        day-to-day task of a woman on her period.
+      </p>
+    </div>
+    <div class="info-cards">
+      <div class="card-deck">
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{% static '/paymentGateway/media/m1.png' %}"
+            alt="Stat"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <small class="text-muted">Credits:NDTV.com</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{% static '/paymentGateway/media/m2.png' %}"
+            alt="Stat"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <small class="text-muted">Credits:NDTV.com</small>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="{% static '/paymentGateway/media/m3.png' %}"
+            alt="Stat"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              <small class="text-muted">Credits:NDTV.com</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-{% endblock content %}
+    <div class="donate-now">
+      <h4>
+        The smallest contribution from your side can help us educate more girls
+        and women across the country to buy and use sanitary products for a safe
+        and hygienic period.
+      </h4>
+      <a class="btn btn-success btn-lg" type="submit" href="{% url 'payment' %}"
+        >Donate</a
+      >
+    </div>
+
+    <footer class="page-footer font-small bg-light">
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2021 Copyright:
+        <a href="#"> Dhanashree Lavekar</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+      integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

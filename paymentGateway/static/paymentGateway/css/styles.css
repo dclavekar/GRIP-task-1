@@ -1,0 +1,266 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.title {
+  text-align: center;
+  font-weight: 800;
+  margin: 10px;
+  color: white;
+}
+
+.info p {
+  /* margin:px; */
+  padding: 20px;
+  color: white;
+}
+.info-cards {
+  margin: 10px;
+  padding: 20px;
+}
+.donate-now {
+  text-align: center;
+}
+
+.page-footer {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.card-body {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.5;
+  left: 50%;
+  top: 30px;
+  font-family: "Clip";
+
+  font-size: 2.5em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff657a,
+    -0.2rem 0.1rem 1rem #ff6565, 0.2rem 0.1rem 1rem #ff6565,
+    0 -0.5rem 2rem #ff2424, 0 0.5rem 3rem #ff242f;
+  animation: shine 5s forwards, flicker 5s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff6565,
+      -0.2rem 0.1rem 1rem #ff6565, 0.2rem 0.1rem 1rem #ff6565,
+      0 -0.5rem 2rem #ff2424, 0 0.5rem 3rem #ff242f;
+  }
+  28%,
+  33% {
+    color: #ff6572;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2424;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.details-form {
+  max-width: 40%;
+  margin: auto;
+  margin-top: 50px;
+}
+.details-form label {
+  color: white;
+  font-size: 2rem;
+}
+.pay-by-razorpay {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin: 50px;
+}
+.pay-by-razorpay h3 {
+  margin-bottom: 30px;
+}
+.success {
+  color: white;
+  text-align: center;
+  margin: 300px;
+}
+.success a {
+  color: white;
+}
+.donate-now .btn {
+  padding: 10px;
+
+  border-radius: 10px;
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+}
