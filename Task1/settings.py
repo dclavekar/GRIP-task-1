@@ -21,12 +21,13 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2m8&c!83wzd0c6julh%mpa^zssh#wpd632*6b87^)if8oh#g3&'
-
+# SECRET_KEY = '2m8&c!83wzd0c6julh%mpa^zssh#wpd632*6b87^)if8oh#g3&'
+SECRET_KEY=os.environ.get('TASK1_secretkey')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# DEBUG=False #in production
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dclpaymentgatewayintegration.herokuapp.com']
 
 
 # Application definition
