@@ -27,7 +27,8 @@ SECRET_KEY=os.environ.get('TASK1_secretkey')
 DEBUG = True
 # DEBUG=False #in production
 
-ALLOWED_HOSTS = ['dclpaymentgatewayintegration.herokuapp.com']
+ALLOWED_HOSTS = ['dclpaymentgatewayintegration.herokuapp.com',
+'donatebydcl.herokuapp.com']
 
 
 # Application definition
